@@ -1,0 +1,91 @@
+/* Conteneur principal de la timeline */
+.timeline {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 0;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    background-color: var(--primary);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+  }
+  &-item {
+    padding: 20px;
+    position: relative;
+    background-color: inherit;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    .toggle-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 12px;
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+      &:hover {
+        background-color: var(--color-dark);
+      }
+    }
+    .card {
+      position: relative;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: var(--box-shadow);
+
+      h3 {
+        margin: 20px 0 10px 0;
+      }
+    }
+    &.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    &-left {
+      left: -50%;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border: 4px solid var(--primary);
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1;
+        right: -14px;
+      }
+    }
+    &-right {
+      left: 50%;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border: 4px solid var(--primary);
+        top: 15px;
+        left: -14px;
+        border-radius: 50%;
+        z-index: 1;
+      }
+    }
+    .content p.expanded {
+      max-height: 100vh; /* Ajuster en fonction de vos besoins */
+    }
+  }
+}

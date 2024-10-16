@@ -1,0 +1,97 @@
+// src/components/Skills/Skills.tsx
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGamepad,
+  faUtensils,
+  faFutbol,
+  faCoffee,
+  faTv,
+  faPhone,
+  faAt,
+} from "@fortawesome/free-solid-svg-icons";
+import React from "react";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
+const loisirsItems = [
+  { icon: faGamepad, label: "Jeux Vidéo" },
+  { icon: faUtensils, label: "Cuisine" },
+  { icon: faFutbol, label: "Football" },
+  { icon: faCoffee, label: "Café" },
+  { icon: faTv, label: "Séries TV" },
+];
+
+const contactsItems = [
+  {
+    icon: faLinkedin,
+    href: "https://www.linkedin.com/in/timothée-cotrel",
+    label: "LinkedIn",
+    target: "_blank",
+    rel: "noopener noreferrer",
+  },
+  { icon: faAt, href: "mailto:timothee.cotrel@gmail.com", label: "Email" },
+  { icon: faPhone, href: "tel:+0787024119", label: "Téléphone" },
+];
+
+const About: React.FC = () => {
+  return (
+    <div id="about">
+      <div className="container">
+        <div className="content">
+          <h2>À propos de moi</h2>
+          <div className="aproposdemoi">
+            <h3>Quelques mots sur moi</h3>
+            <p>
+              Développeur informatique depuis plus de 8 ans, j’ai acquis des
+              compétences dans l’informatique et sur moi-même (autonomie,
+              l’esprit d’équipe, etc...). <br />
+              <br />
+              Aujourd’hui je recherche de nouveaux challenges et de nouveaux
+              projets à développer. <br />
+              Je suis une personne motivée et qui a toujours soif d'apprendre,
+              que se soit via des formations ou en autodidacte.
+              <br /> Je suis aussi bien à l’aise en présentiel qu’en
+              télétravail.
+              <br />
+              <br />
+              Je suis disponiblre dès <b>maintenant</b> pour une prise de poste
+              et mon périmètre de recherche s'étend dans un rayon de 50km autour
+              d'Alençon mais je suis également ouvert à faire du full-remote.
+            </p>
+            <h3>Loisirs</h3>
+            <div className="loisir-container">
+              {loisirsItems.map((item, index) => (
+                <div key={index} className="loisir-item">
+                  <FontAwesomeIcon icon={item.icon} size="5x" />
+                  <div className="loisir-label">{item.label}</div>
+                </div>
+              ))}
+            </div>
+            <h3>Contactez moi !</h3>
+            <div className="loisir-container">
+              <div className="loisir-item">
+                Si vous êtes intéressé, si vous souhaitez échnager ou me laisser
+                un message, n'hésitez pas :
+                <div className="contact-container">
+                  {contactsItems.map((contact, index) => (
+                    <a
+                      key={index}
+                      href={contact.href}
+                      target={contact.target}
+                      rel={contact.rel}
+                      className="contact-item"
+                    >
+                      <FontAwesomeIcon icon={contact.icon} size="3x" />
+                      <div className="contact-label">{contact.label}</div>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default About;

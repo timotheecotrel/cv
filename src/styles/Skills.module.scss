@@ -1,0 +1,47 @@
+// src/components/Skills/Skills.module.scss
+.skillsContainer {
+  display: flex;
+  flex-direction: column; /* Aligner le titre et les colonnes verticalement */
+  width: 50%;
+  padding: 20px 50px;
+  margin: 20px auto 0 auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  .title {
+    font-size: var(--font-size-large);
+    margin-bottom: 20px; /* Espacement sous le titre */
+  }
+
+  .columns {
+    display: flex; /* Aligner les colonnes en ligne */
+    gap: 20px; /* Espacement entre les colonnes */
+  }
+
+  .column {
+    flex: 1; /* Les deux colonnes prennent une largeur égale */
+  }
+
+  .skill {
+    margin-bottom: 20px;
+  }
+
+  .skillLabel {
+    font-weight: var(--font-weight-semi-bold);
+    font-size: var(--font-size-regular);
+    margin-bottom: 5px;
+  }
+
+  .progressBar {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+  }
+
+  .progressBarFill {
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    transition: width 1s ease-in-out;
+  }
+}

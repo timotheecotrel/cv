@@ -1,0 +1,140 @@
+#menu {
+  position: fixed; /* Fixe le menu en haut de l'écran */
+  top: 0; /* Positionne le menu en haut */
+  left: 0; /* Positionne le menu à gauche */
+  width: 100%; /* S'assure que le menu occupe toute la largeur de l'écran */
+  z-index: 1000; /* S'assure que le menu est au-dessus des autres éléments */
+  height: 50px;
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  h1 {
+    color: var(--color-primary);
+    margin: 0 20px;
+  }
+  ul {
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+    text-transform: uppercase;
+    font-size: var(--font-size-small);
+    li {
+      display: flex; /* Utilise flexbox pour centrer le contenu */
+      color: var(--color-primary);
+      margin: 0;
+      flex: 1; /* Les éléments de menu prennent chacun une part égale de l'espace disponible */
+      align-items: center; /* Centre le contenu verticalement dans chaque élément de menu */
+      justify-content: center; /* Centre le contenu horizontalement dans chaque élément de menu */
+      a {
+        display: flex; /* Utilise flexbox à l'intérieur du lien */
+        align-items: center; /* Centre le texte verticalement dans le lien */
+        justify-content: center; /* Centre le texte horizontalement dans le lien */
+        width: 100%; /* Prend toute la largeur de l'élément li */
+        height: 100%; /* Prend toute la hauteur de l'élément li */
+      }
+      &:hover {
+        background-color: var(--primary-light);
+        color: var(--primary);
+        box-shadow: var(--box-shadow);
+        transition: background-color 0.5s;
+      }
+    }
+  }
+  .active {
+    background-color: var(--primary-light);
+    color: var(--primary);
+    box-shadow: var(--box-shadow);
+  }
+}
+
+#menu {
+  .navbar {
+    background-color: var(--primary);
+    padding: 0 20px;
+    width: 100%;
+    height: 50px;
+  }
+
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 50px;
+  }
+
+  .navbar-logo h1 {
+    color: var(--primary-light);
+    font-size: 1.5em;
+    margin: 0 10px 0 0;
+  }
+
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-menu li {
+    flex: 1; /* Permet à chaque élément <li> de prendre une largeur égale */
+    height: 100%; /* Prend toute la hauteur disponible */
+    display: flex; /* Utilise Flexbox pour centrer le contenu */
+    align-items: center; /* Centre verticalement le contenu */
+    justify-content: center; /* Centre horizontalement le contenu */
+  }
+
+  .nav-menu a {
+    text-decoration: none;
+    font-size: var(--font-size-small);
+    display: block; /* Permet de prendre toute la largeur et hauteur du parent */
+    height: 100%; /* Prend toute la hauteur disponible de <li> */
+    width: 100%; /* Prend toute la largeur disponible de <li> */
+    text-align: center; /* Centre le texte horizontalement */
+    line-height: 50px; /* Ajuste la hauteur de ligne pour centrer verticalement */
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .menu-toggle .bar {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+  }
+
+  @media (max-width: 768px) {
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      background-color: var(--primary);
+    }
+
+    .nav-menu.active {
+      display: flex;
+      background-color: var(--primary-light);
+    }
+
+    .nav-menu li {
+      text-align: center;
+      background-color: var(--primary);
+      &.active {
+        color: var(--primary);
+      }
+    }
+
+    .menu-toggle {
+      display: flex;
+    }
+  }
+}
