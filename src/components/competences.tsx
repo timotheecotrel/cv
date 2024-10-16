@@ -38,7 +38,7 @@ const Competences: React.FC = () => {
     <div id="competences">
       <div className="container">
         <div className="content">
-          <h2>Compétences :</h2>
+          <h2>Compétences</h2>
           <Skills skills={SkillInformatiques} title="Langages Informatiques" />
           <Skills skills={SkillBDD} title="Base de données" />
           <Skills skills={SkillLogiciels} title="Logiciels" />
