@@ -1,5 +1,5 @@
 import React from "react";
-import Skills from "../components/Skill";
+import Skills from "./skill";
 
 interface Skill {
   name: string;
