@@ -1,0 +1,26 @@
+#formations {
+  .container {
+    width: 100%;
+    position: relative;
+    top: 50px;
+    box-sizing: border-box; /* Inclut le padding dans la hauteur totale */
+    .content {
+      width: 100%; /* Largeur de la div */
+      height: calc(100% - 60px); /* Prend toute la hauteur restante */
+      display: flex;
+      flex-direction: column;
+      h2 {
+        text-align: center;
+        line-height: var(--line-height-hight);
+      }
+      div {
+        color: var(--primary);
+        .date,
+        .option {
+          line-height: var(--line-height-small);
+          font-weight: var(--font-weight-semi-bold);
+        }
+      }
+    }
+  }
+}

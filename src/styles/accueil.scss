@@ -1,0 +1,100 @@
+#accueil {
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+    position: relative;
+    top: 50px;
+    display: flex;
+    align-items: stretch; /* Permet à la div interne de prendre toute la hauteur disponible */
+    justify-content: center; /* Centre horizontalement */
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap; /* Permet aux éléments de se mettre à la ligne si nécessaire */
+      width: 75%; /* Largeur de la div */
+      height: calc(100% - 60px); /* Prend toute la hauteur restante */
+      justify-content: center; /* Centre le contenu horizontalement */
+      color: var(--primary);
+      .quisuisje {
+        display: flex;
+        flex-direction: column;
+        justify-items: center; /* Centre le contenu verticalement */
+        text-align: left;
+        line-height: 30px;
+        flex: 1;
+        p a {
+          font-weight: var(--font-weight-bold);
+          font-size: var(--font-size-regular);
+        }
+      }
+      .hexagon {
+        position: relative;
+        width: 300px; /* Largeur de l'hexagone */
+        height: 300px; /* Hauteur de l'hexagone */
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 300px;
+          object-fit: cover; /* Assure que l'image couvre toute la zone */
+          clip-path: polygon(
+            50% 0%,
+            100% 25%,
+            100% 75%,
+            50% 100%,
+            0% 75%,
+            0% 25%
+          );
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column; /* Passe en colonne pour les petits écrans */
+    align-items: center;
+  }
+
+  .hexagon,
+  .quisuisje {
+    width: 100%; /* Prendre toute la largeur disponible */
+    text-align: center;
+  }
+
+  .hexagon {
+    height: 250px; /* Ajuster la taille de l'hexagone pour les petits écrans */
+  }
+
+  .quisuisje {
+    padding: 20px 10px;
+  }
+
+  .quisuisje h2 {
+    font-size: 1.5em;
+  }
+
+  .quisuisje p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .hexagon {
+    height: 200px; /* Encore plus petit pour les très petits écrans */
+  }
+
+  .quisuisje h2 {
+    font-size: 1.2em;
+  }
+
+  .quisuisje p {
+    font-size: 0.9em;
+  }
+}

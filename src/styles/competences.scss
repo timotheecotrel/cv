@@ -1,0 +1,17 @@
+#competences {
+  .container {
+    width: 100%;
+    position: relative;
+    top: 50px;
+    box-sizing: border-box; /* Inclut le padding dans la hauteur totale */
+  }
+  .content {
+    width: 100%; /* Largeur de la div */
+    height: calc(100% - 60px); /* Prend toute la hauteur restante */
+    display: flex;
+    align-items: center; /* Centre le contenu verticalement */
+    justify-content: center; /* Centre le contenu horizontalement */
+    flex-direction: column;
+    color: var(--primary);
+  }
+}
