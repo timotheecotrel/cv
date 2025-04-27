@@ -8,6 +8,7 @@ import {
   faTv,
   faPhone,
   faAt,
+  faPrint
 } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -18,6 +19,7 @@ const loisirsItems = [
   { icon: faFutbol, label: "Football" },
   { icon: faCoffee, label: "Café" },
   { icon: faTv, label: "Séries TV" },
+  { icon: faPrint, label: "Impression 3D" },
 ];
 
 const contactsItems = [

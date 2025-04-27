@@ -1,5 +1,5 @@
 import React from "react";
-import Skills from "./skill";
+import Skills from "./Skill";
 
 interface Skill {
   name: string;
@@ -14,9 +14,9 @@ const SkillInformatiques: Skill[] = [
   { name: "ReactJS", percentage: 40 },
   { name: "POO", percentage: 60 },
   { name: "SQL", percentage: 85 },
-  { name: "Typescript", percentage: 40 },
-  { name: "Symfony", percentage: 40 },
-  { name: "Git/Gitlab", percentage: 50 },
+  { name: "Typescript", percentage: 30 },
+  { name: "Symfony", percentage: 25 },
+  { name: "Git/Gitlab", percentage: 40 },
 ];
 
 const SkillBDD: Skill[] = [
