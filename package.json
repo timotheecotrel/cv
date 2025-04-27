@@ -2,6 +2,7 @@
   "name": "cv-tcotrel",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://timotheecotrel.github.io/cv",
   "dependencies": {
     "@babel/plugin-transform-numeric-separator": "^7.24.7",
     "@babel/plugin-transform-private-methods": "^7.25.4",
@@ -17,6 +18,7 @@
     "@types/node": "^16.18.105",
     "@types/react": "^18.3.4",
     "@types/react-dom": "^18.3.0",
+    "gh-pages": "^6.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "^5.0.1",
@@ -27,7 +29,9 @@
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
