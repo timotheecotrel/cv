@@ -11,7 +11,7 @@ const SkillInformatiques: Skill[] = [
   { name: "HTML", percentage: 80 },
   { name: "CSS/SASS", percentage: 75 },
   { name: "Javascript", percentage: 70 },
-  { name: "ReactJS", percentage: 40 },
+  { name: "ReactJS", percentage: 35 },
   { name: "POO", percentage: 60 },
   { name: "SQL", percentage: 85 },
   { name: "Typescript", percentage: 30 },
