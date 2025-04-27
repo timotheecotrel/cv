@@ -16,7 +16,7 @@ const SkillInformatiques: Skill[] = [
   { name: "SQL", percentage: 85 },
   { name: "Typescript", percentage: 30 },
   { name: "Symfony", percentage: 25 },
-  { name: "Git/Gitlab", percentage: 40 },
+  { name: "Git/Gitlab", percentage: 30 },
 ];
 
 const SkillBDD: Skill[] = [
