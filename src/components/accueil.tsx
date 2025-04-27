@@ -20,7 +20,7 @@ const Accueil: React.FC = () => {
             </p>
             <p>
               Je suis peut-être la solution à votre problème alors{" "}
-              <a href="../../pdf/CV_COTREL_Timothee.pdf" target="blank">
+              <a href="../../pdf/CV_COTREL_Timothee_dev.pdf" target="blank">
                 téléchargez mon cv !
               </a>
             </p>
