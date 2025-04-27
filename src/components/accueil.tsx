@@ -23,7 +23,7 @@ const Accueil: React.FC = () => {
       <div className="container">
         <div className="content">
           <div className="hexagon">
-            <img src="../../images/profile.jpg" alt="" />
+            <img src={process.env.PUBLIC_URL + '/images/profile.jpg'} alt="" />
           </div>
           <div className="quisuisje">
             <h2>Timothée (mais je préfère Tim), j'ai {monAge} ans</h2>
@@ -34,7 +34,7 @@ const Accueil: React.FC = () => {
               Ma devise ? <i>Il n'y a pas de problème, il n'y a que des solutions.</i>
             </p>
             <p>
-              Je suis peut-être la solution à votre problème alors <a href="../../pdf/CV_COTREL_Timothee_dev.pdf" target="blank"> téléchargez mon cv !
+              Je suis peut-être la solution à votre problème alors <a href={process.env.PUBLIC_URL + '/pdf/CV_COTREL_Timothee_dev.pdf'} target="blank"> téléchargez mon cv !
               </a>
             </p>
           </div>
