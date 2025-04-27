@@ -2,7 +2,7 @@
   "name": "cv-tcotrel",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://timotheecotrel.github.io/cv",
+  "homepage": "https://timotheecotrel.github.io/cv-tcotrel",
   "dependencies": {
     "@babel/plugin-transform-numeric-separator": "^7.24.7",
     "@babel/plugin-transform-private-methods": "^7.25.4",
