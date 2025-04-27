@@ -71,7 +71,7 @@ const About: React.FC = () => {
             <h3>Contactez moi !</h3>
             <div className="loisir-container">
               <div className="loisir-item">
-                Si vous êtes intéressé, si vous souhaitez échnager ou me laisser
+                Si vous êtes intéressé, si vous souhaitez échanger ou me laisser
                 un message, n'hésitez pas :
                 <div className="contact-container">
                   {contactsItems.map((contact, index) => (

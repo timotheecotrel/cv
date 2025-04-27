@@ -37,6 +37,7 @@ const experiences: ExperienceItem[] = [
       "Git",
       "Gitlab",
       "SVN",
+      "formation"
     ],
   },
   {
