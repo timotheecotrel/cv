@@ -44,15 +44,14 @@ const About: React.FC = () => {
             <h3>Quelques mots sur moi</h3>
             <p>
               Développeur informatique depuis plus de 8 ans, j’ai acquis des
-              compétences dans l’informatique et sur moi-même (autonomie,
+              compétences <b>solides</b> dans l’informatique et sur moi-même (autonomie,
               l’esprit d’équipe, etc...). <br />
               <br />
               Aujourd’hui je recherche de nouveaux challenges et de nouveaux
               projets à développer. <br />
-              Je suis une personne motivée et qui a toujours soif d'apprendre,
+              Je suis une personne <b>motivée</b> et qui a toujours soif d'apprendre,
               que se soit via des formations ou en autodidacte.
-              <br /> Je suis aussi bien à l’aise en présentiel qu’en
-              télétravail.
+              <br /> Je suis aussi bien à l’aise en <u>présentiel</u> qu’en <u>télétravail</u>.
               <br />
               <br />
               Je suis disponiblre dès <b>maintenant</b> pour une prise de poste
