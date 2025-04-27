@@ -2,6 +2,22 @@
 import React from "react";
 
 const Accueil: React.FC = () => {
+  const calculerAge = (dateNaissance :string) => {
+    const today = new Date();
+    const birthDate = new Date(dateNaissance);
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const monthDiff = today.getMonth() - birthDate.getMonth();
+    
+    // Si le mois actuel est avant celui de l'anniversaire, ou que c'est le mois de l'anniversaire mais avant le jour, on enlève 1
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+    }
+    
+    return age;
+  };
+
+  const monAge = calculerAge('1990-11-27'); 
+
   return (
     <div id="accueil">
       <div className="container">
@@ -10,7 +26,7 @@ const Accueil: React.FC = () => {
             <img src="../../images/profile.jpg" alt="" />
           </div>
           <div className="quisuisje">
-            <h2>Je suis Timothée, j'ai 33 ans</h2>
+            <h2>Je suis Timothée, j'ai {monAge} ans</h2>
             <p>
               je suis développeur Web avec une préférence pour le back-end !
             </p>
