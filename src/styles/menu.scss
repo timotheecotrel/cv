@@ -1,5 +1,4 @@
 #menu {
-  position: fixed; /* Fixe le menu en haut de l'écran */
   top: 0; /* Positionne le menu en haut */
   left: 0; /* Positionne le menu à gauche */
   width: 100%; /* S'assure que le menu occupe toute la largeur de l'écran */
@@ -109,7 +108,11 @@
     margin: 3px 0;
   }
 
-  @media (max-width: 768px) {
+  
+}
+
+@media (max-width: 768px) {
+  #menu {
     .nav-menu {
       display: none;
       flex-direction: column;
@@ -119,12 +122,14 @@
       left: 0;
       background-color: var(--primary);
     }
-
+    .navbar-container {
+      max-width: 100%;
+    }
     .nav-menu.active {
       display: flex;
       background-color: var(--primary-light);
     }
-
+  
     .nav-menu li {
       text-align: center;
       background-color: var(--primary);
@@ -132,9 +137,10 @@
         color: var(--primary);
       }
     }
-
+  
     .menu-toggle {
       display: flex;
     }
   }
+  
 }
