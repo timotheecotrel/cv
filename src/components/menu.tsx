@@ -11,7 +11,7 @@ const Menu: React.FC = () => {
 
   const menuItems: MenuItem[] = [
     { text: "accueil", href: "accueil" },
-    { text: "experiences", href: "experience" },
+    { text: "éxperiences", href: "experience" },
     { text: "formations & diplômes", href: "formations" },
     { text: "compétences", href: "competences" },
     { text: "à propos de moi", href: "about" },
