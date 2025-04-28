@@ -5,7 +5,7 @@ export function useIntersectionObserver(threshold: number = 0.1) {
   const ref = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    const currentElement = ref.current; // Copier la valeur de ref.current
+    const currentElement = ref.current; 
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {

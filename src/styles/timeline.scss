@@ -85,7 +85,28 @@
       }
     }
     .content p.expanded {
-      max-height: 100vh; /* Ajuster en fonction de vos besoins */
+      max-height: 100vh;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 0;
+    &::before {
+      left: 5%;
+
+    }
+    &-item{
+      &-left, &-right{
+        left: 5%;
+        &::after {
+          left: calc( 0% - 28px/2) ;
+        }
+      }
     }
   }
 }
