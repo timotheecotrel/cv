@@ -1,9 +1,9 @@
 #menu {
-  position: fixed; /* Fixe le menu en haut de l'écran */
-  top: 0; /* Positionne le menu en haut */
-  left: 0; /* Positionne le menu à gauche */
-  width: 100%; /* S'assure que le menu occupe toute la largeur de l'écran */
-  z-index: 1000; /* S'assure que le menu est au-dessus des autres éléments */
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   height: 50px;
   background-color: var(--primary);
   display: flex;
@@ -19,7 +19,7 @@
     text-transform: uppercase;
     font-size: var(--font-size-small);
     li {
-      display: flex; /* Utilise flexbox pour centrer le contenu */
+      display: flex;
       color: var(--color-primary);
       margin: 0;
       flex: 1; /* Les éléments de menu prennent chacun une part égale de l'espace disponible */
@@ -29,8 +29,8 @@
         display: flex; /* Utilise flexbox à l'intérieur du lien */
         align-items: center; /* Centre le texte verticalement dans le lien */
         justify-content: center; /* Centre le texte horizontalement dans le lien */
-        width: 100%; /* Prend toute la largeur de l'élément li */
-        height: 100%; /* Prend toute la hauteur de l'élément li */
+        width: 100%; 
+        height: 100%; 
       }
       &:hover {
         background-color: var(--primary-light);
@@ -118,7 +118,7 @@
     width: 100%;
     background-color: white;
     border-radius: 2px;
-    transition: all 0.3s ease; /* Animation douce */
+    transition: all 0.3s ease; 
   }
 
   /* Animation du menu burger en X */
@@ -145,7 +145,7 @@
 
     .nav-menu {
       position: fixed;
-      top: 50px; /* pas 60px sinon ton menu flotte mal */
+      top: 50px;
       left: 0;
       right: 0;
       width: 100%;
@@ -168,15 +168,15 @@
       margin: 10px 0;
       background-color: var(--primary);
       
-      flex: unset; /* IMPORTANT : on enlève le flex:1 du desktop */
-      height: auto; /* Hauteur automatique */
+      flex: unset;
+      height: auto;
     }
 
     .nav-menu li a {
-      width: auto; /* auto, sinon ça étire trop */
+      width: auto;
       height: auto;
       font-size: 24px;
-      padding: 10px 0; /* Pas besoin de toute la hauteur */
+      padding: 10px 0; 
       color: white;
       text-decoration: none;
       background: none;

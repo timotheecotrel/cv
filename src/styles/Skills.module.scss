@@ -1,7 +1,7 @@
 // src/components/Skills/Skills.module.scss
 .skillsContainer {
   display: flex;
-  flex-direction: column; /* Aligner le titre et les colonnes verticalement */
+  flex-direction: column; 
   width: 50%;
   padding: 20px 50px;
   margin: 20px auto 0 auto;
@@ -10,16 +10,16 @@
   box-shadow: var(--box-shadow);
   .title {
     font-size: var(--font-size-large);
-    margin-bottom: 20px; /* Espacement sous le titre */
+    margin-bottom: 20px; 
   }
 
   .columns {
-    display: flex; /* Aligner les colonnes en ligne */
-    gap: 20px; /* Espacement entre les colonnes */
+    display: flex; 
+    gap: 20px; 
   }
 
   .column {
-    flex: 1; /* Les deux colonnes prennent une largeur égale */
+    flex: 1; 
   }
 
   .skill {

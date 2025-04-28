@@ -17,7 +17,6 @@ const colors = [
   "#9fb4c6", // Bleu poudre mat
 ];
 
-// Fonction pour obtenir une couleur bleue aléatoire parmi les teintes définies
 const getRandomColor = () => {
   const randomIndex = Math.floor(Math.random() * colors.length);
   return colors[randomIndex];
@@ -30,7 +29,7 @@ interface Skill {
 
 interface SkillsProps {
   skills: Skill[];
-  title?: string; // Ajout d'une prop pour le titre
+  title?: string; 
 }
 
 const Skills: React.FC<SkillsProps> = ({ skills, title }) => {

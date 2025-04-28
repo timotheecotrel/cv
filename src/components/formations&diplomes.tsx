@@ -44,7 +44,7 @@ const Formations: React.FC = () => {
             {formations.map((form, index) => (
               <TimelineItem
                 type="formation"
-                key={index} // Utilise une clé unique ici
+                key={index}
                 formation={form.formation}
                 localisation={form.localisation}
                 quand={form.quand}

@@ -16,7 +16,7 @@ const experiences: ExperienceItem[] = [
   {
     entreprise: "Hexaom - siège",
     localisation: "Alençon (61)",
-    poste: "Développeur full stack",
+    poste: "Développeur full-stack",
     debut: "Avril 2016",
     fin: "Juin 2024",
     duree: "8 ans et 3 mois",
@@ -37,7 +37,9 @@ const experiences: ExperienceItem[] = [
       "Git",
       "Gitlab",
       "SVN",
-      "formation"
+      "SQL",
+      "PostgreSQL",
+      "formation aux utilisateurs"
     ],
   },
   {
@@ -76,12 +78,12 @@ const Experience: React.FC = () => {
     <div id="experience">
       <div className="container">
         <div className="content">
-          <h2>Experiences</h2>
+          <h2>Éxperiences</h2>
           <div className="timeline">
             {experiences.map((exp, index) => (
               <TimelineItem
                 type="experience"
-                key={index} // Utilise une clé unique ici
+                key={index} 
                 entreprise={exp.entreprise}
                 localisation={exp.localisation}
                 poste={exp.poste}

@@ -50,11 +50,11 @@ const About: React.FC = () => {
               Aujourd’hui je recherche de nouveaux challenges et de nouveaux
               projets à développer. <br />
               Je suis une personne <b>motivée</b> et qui a toujours soif d'apprendre,
-              que se soit via des formations ou en autodidacte.
+              que ce soit via des formations ou en autodidacte.
               <br /> Je suis aussi bien à l’aise en <u>présentiel</u> qu’en <u>télétravail</u>.
               <br />
               <br />
-              Je suis disponiblre dès <b>maintenant</b> pour une prise de poste
+              Je suis disponible dès <b>maintenant</b> pour une prise de poste
               et mon périmètre de recherche s'étend dans un rayon de 50km autour
               d'Alençon mais je suis également ouvert à faire du full-remote.
             </p>

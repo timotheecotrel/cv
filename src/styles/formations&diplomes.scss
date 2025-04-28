@@ -3,10 +3,10 @@
     width: 100%;
     position: relative;
     top: 50px;
-    box-sizing: border-box; /* Inclut le padding dans la hauteur totale */
+    box-sizing: border-box; 
     .content {
-      width: 100%; /* Largeur de la div */
-      height: calc(100% - 60px); /* Prend toute la hauteur restante */
+      width: 100%;
+      height: calc(100% - 60px);
       display: flex;
       flex-direction: column;
       h2 {

@@ -101,7 +101,7 @@ const TimelineItem: React.FC<TimelineItemProps> = (props) => {
       </div>
     );
   }
-  return null; // Si aucun type ne correspond
+  return null; 
 };
 
 export default TimelineItem;

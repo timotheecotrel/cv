@@ -7,10 +7,8 @@ const Menu: React.FC = () => {
     href: string;
   };
 
-  // L'état pour suivre l'élément actif
   const [activeIndex, setActiveIndex] = useState<string | null>("accueil");
 
-  // Les éléments du menu
   const menuItems: MenuItem[] = [
     { text: "accueil", href: "accueil" },
     { text: "experiences", href: "experience" },
