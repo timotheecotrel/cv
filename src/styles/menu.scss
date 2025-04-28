@@ -1,4 +1,5 @@
 #menu {
+  position: fixed; /* Fixe le menu en haut de l'écran */
   top: 0; /* Positionne le menu en haut */
   left: 0; /* Positionne le menu à gauche */
   width: 100%; /* S'assure que le menu occupe toute la largeur de l'écran */
@@ -101,46 +102,89 @@
     cursor: pointer;
   }
 
-  .menu-toggle .bar {
-    background-color: white;
-    height: 3px;
-    width: 25px;
-    margin: 3px 0;
+  .menu-toggle {
+    display: none; /* caché par défaut */
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1100;
   }
+  
+  .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.3s ease; /* Animation douce */
+  }
+
+  /* Animation du menu burger en X */
+.menu-toggle.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(10px, 10px);
+}
+
+.menu-toggle.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
 
   
 }
 
 @media (max-width: 768px) {
   #menu {
-    .nav-menu {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      position: absolute;
-      top: 50px;
-      left: 0;
-      background-color: var(--primary);
-    }
     .navbar-container {
       max-width: 100%;
     }
-    .nav-menu.active {
-      display: flex;
-      background-color: var(--primary-light);
-    }
-  
-    .nav-menu li {
-      text-align: center;
+
+    .nav-menu {
+      position: fixed;
+      top: 50px; /* pas 60px sinon ton menu flotte mal */
+      left: 0;
+      right: 0;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
       background-color: var(--primary);
-      &.active {
-        color: var(--primary);
-      }
+      overflow: hidden;
+      height: 0;
+      transition: height 0.3s ease;
+      padding: 0;
+      margin: 0;
     }
-  
+
+    .nav-menu.active {
+      height: calc(100vh - 50px);
+    }
+
+    .nav-menu li {
+      width: 100%;
+      margin: 10px 0;
+      background-color: var(--primary);
+      
+      flex: unset; /* IMPORTANT : on enlève le flex:1 du desktop */
+      height: auto; /* Hauteur automatique */
+    }
+
+    .nav-menu li a {
+      width: auto; /* auto, sinon ça étire trop */
+      height: auto;
+      font-size: 24px;
+      padding: 10px 0; /* Pas besoin de toute la hauteur */
+      color: white;
+      text-decoration: none;
+      background: none;
+    }
+
     .menu-toggle {
       display: flex;
     }
   }
-  
 }
+

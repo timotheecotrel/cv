@@ -8,3 +8,7 @@
 @import "./about";
 @import "./footer";
 @import "./timeline";
+
+html, body {
+    overflow-x: hidden;
+  }

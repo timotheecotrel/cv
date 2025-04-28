@@ -1,12 +1,11 @@
 #accueil {
+  padding-top: 50px;
   .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 
-    position: relative;
-    top: 50px;
     display: flex;
     align-items: stretch; /* Permet à la div interne de prendre toute la hauteur disponible */
     justify-content: center; /* Centre horizontalement */

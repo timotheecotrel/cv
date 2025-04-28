@@ -23,6 +23,10 @@ const Menu: React.FC = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  const handleItemClick = () => {
+    setIsOpen(false); // referme le menu après un clic
+  };
+
   // Gérer le changement d'item actif au scroll
   useEffect(() => {
     const handleScroll = () => {
@@ -69,7 +73,7 @@ const Menu: React.FC = () => {
                 key={index}
                 className={item.href === activeIndex ? "active" : ""}
               >
-                <a href={`#${item.href}`}>{item.text}</a>
+                <a href={`#${item.href}`} onClick={handleItemClick}>{item.text}</a>
               </li>
             ))}
           </ul>
