@@ -22,7 +22,6 @@ const SkillInformatiques: Skill[] = [
 const SkillBDD: Skill[] = [
   { name: "MySQL", percentage: 80 },
   { name: "Postgre SQL", percentage: 60 },
-  { name: "Microsoft SQL Server", percentage: 60 },
 ];
 
 const SkillLogiciels: Skill[] = [

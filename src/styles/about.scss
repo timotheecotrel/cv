@@ -13,6 +13,7 @@
     justify-content: center; /* Centre le contenu horizontalement */
     flex-direction: column;
     color: var(--primary);
+    text-align: justify;
     .aproposdemoi {
       display: flex;
       flex-direction: column; /* Aligner le titre et les colonnes verticalement */
@@ -66,18 +67,34 @@
 
 .contact-item {
   display: flex;
-  flex-direction: column; /* Aligne l'icône et le label verticalement */
+  flex-direction: column; 
   text-align: center;
   text-decoration: none;
-  color: var(--primary); /* Couleur du texte */
-  width: 150px; /* Largeur fixe pour les éléments, ajustez si nécessaire */
+  color: var(--primary); 
+  width: 150px; 
 }
 
 .contact-item:hover {
-  color: var(--color-dark); /* Couleur de survol pour LinkedIn */
+  color: var(--color-dark); 
 }
 
 .contact-label {
   margin-top: 10px;
   font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  #about .content{
+    padding: 0 5px;
+  }
+  #about .content .aproposdemoi{
+    width: 100%;
+    padding: 10px 15px;
+  }
+  .contact-container {
+    width: 100%;
+  }
+  .contact-item {
+    width: calc(100%/3 - 20px);
+  }
 }
