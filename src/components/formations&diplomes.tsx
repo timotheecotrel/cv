@@ -39,7 +39,7 @@ const Formations: React.FC = () => {
     <div id="formations">
       <div className="container">
         <div className="content">
-          <h2>Formations & Diplomes</h2>
+          <h2>Formations & Diplômes</h2>
           <div className="timeline">
             {formations.map((form, index) => (
               <TimelineItem
