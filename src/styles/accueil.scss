@@ -18,13 +18,12 @@
       flex-wrap: wrap; /* Permet aux éléments de se mettre à la ligne si nécessaire */
       width: 75%; /* Largeur de la div */
       height: calc(100% - 60px); /* Prend toute la hauteur restante */
-      justify-content: center; /* Centre le contenu horizontalement */
       color: var(--primary);
       .quisuisje {
         display: flex;
         flex-direction: column;
         justify-items: center; /* Centre le contenu verticalement */
-        text-align: left;
+        text-align: justify;
         line-height: 30px;
         flex: 1;
         p a {
@@ -57,44 +56,37 @@
 }
 
 @media (max-width: 768px) {
-  .content {
-    flex-direction: column; /* Passe en colonne pour les petits écrans */
-    align-items: center;
-  }
+  #accueil .container{
+    overflow-x: hidden;
+    padding: 0;
+    .content {
+      width: 100%;
+      height: 100%;
+      flex-direction: column; /* Passe en colonne pour les petits écrans */
+      align-items: center;
+      .hexagon img{
+        text-align: center;
+        position: relative;
+        top: auto;
+        left: auto;
+      }
 
-  .hexagon,
-  .quisuisje {
-    width: 100%; /* Prendre toute la largeur disponible */
-    text-align: center;
-  }
+      .hexagon,
+      .quisuisje {
+        width: 100%; /* Prendre toute la largeur disponible */
+        text-align: center;
+      }
 
-  .hexagon {
-    height: 250px; /* Ajuster la taille de l'hexagone pour les petits écrans */
-  }
-
-  .quisuisje {
-    padding: 20px 10px;
-  }
-
-  .quisuisje h2 {
-    font-size: 1.5em;
-  }
-
-  .quisuisje p {
-    font-size: 1em;
-  }
-}
-
-@media (max-width: 480px) {
-  .hexagon {
-    height: 200px; /* Encore plus petit pour les très petits écrans */
-  }
-
-  .quisuisje h2 {
-    font-size: 1.2em;
-  }
-
-  .quisuisje p {
-    font-size: 0.9em;
+      .quisuisje {
+        padding: 20px 10px;
+        text-align: justify;
+        h2 {
+          font-size: 1.5em;
+        }
+        p {
+          font-size: 1em;
+        }
+      }
+    }
   }
 }
