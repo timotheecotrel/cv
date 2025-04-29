@@ -34,6 +34,35 @@ const contactsItems = [
   { icon: faPhone, href: "tel:+0787024119", label: "Téléphone" },
 ];
 
+const compPersoItems = [
+  {
+    competence: "Optimiste",
+    emoji: "💪🏻",
+  },
+  {
+    competence: "Objectif",
+    emoji: "🎯",
+  },
+  {
+    competence: "Esprit d'équipe",
+    emoji: "🤝🏻",
+  },
+  {
+    competence: "Autodidacte/autonome",
+    emoji: "🧠",
+  },
+  {
+    competence: "Sens de l'observation",
+    emoji: "🔎",
+  },
+  {
+    competence: "Analyser, vérifier, résoudre",
+    emoji: "🧩",
+  },
+  
+];
+
+
 const About: React.FC = () => {
   return (
     <div id="about">
@@ -59,14 +88,10 @@ const About: React.FC = () => {
               d'Alençon mais je suis également ouvert à faire du full-remote.
             </p>
             <h3>Personellement je suis comment ?</h3>
-            <p>
-              <ul>
-                <li>Optimiste</li>
-                <li>Objectif</li>
-                <li>Esprit déquipe</li>
-                <li>Autodidacte/autonome</li>
-                <li>Sens de l'observation</li>
-                <li>Analyser, vérifier, résoudre</li>
+            <p><ul>
+                {compPersoItems.map((item, index) => (
+                  <li key={index}>{item.emoji} {item.competence}</li>
+              ))}
             </ul>
             </p>
             <h3>Loisirs</h3>
