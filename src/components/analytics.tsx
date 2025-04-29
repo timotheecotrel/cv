@@ -1,26 +1,25 @@
-// src/components/Analytics.tsx
 import { useEffect } from 'react';
 
 const Analytics = () => {
   useEffect(() => {
-    // Injecter le script
+    // Script Google Analytics
     const script = document.createElement('script');
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-XSMCLSG80J'; // <-- Ton ID
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-XSMCLSG80J';
     script.async = true;
     document.head.appendChild(script);
 
-    // Initialiser GA
+    // Script d'initialisation inline
     const inlineScript = document.createElement('script');
     inlineScript.innerHTML = `
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-XSMCLSG80J');
+      gtag('config', 'G-XSMCLSG80J'); // <-- PAS de config avec cookie_domain ici
     `;
     document.head.appendChild(inlineScript);
   }, []);
 
-  return null; // Ce composant n'affiche rien
+  return null;
 };
 
 export default Analytics;
