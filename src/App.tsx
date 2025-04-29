@@ -7,19 +7,23 @@ import Formations from "./components/formations&diplomes";
 import Competences from "./components/competences";
 import About from "./components/about";
 import Footer from "./components/footer";
+import Analytics from './components/analytics';
 import "./styles/App.scss";
 
 function App() {
   return (
-    <div className="App">
-      <Menu />
-      <Accueil />
-      <Experience />
-      <Formations />
-      <Competences />
-      <About />
-      <Footer />
-    </div>
+    <>
+      <Analytics />
+      <div className="App">
+        <Menu />
+        <Accueil />
+        <Experience />
+        <Formations />
+        <Competences />
+        <About />
+        <Footer />
+      </div>
+    </>
   );
 }
 
