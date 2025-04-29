@@ -33,6 +33,7 @@ const Analytics = () => {
         cookie_domain: 'auto',  // Définit automatiquement le domaine des cookies
         cookie_expires: 63072000,  // Durée de vie des cookies (2 ans ici)
       });
+      console.log("Google Analytics configuré");
     };
   }, []);
 
