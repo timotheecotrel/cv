@@ -25,12 +25,17 @@
       box-shadow: var(--box-shadow);
       p {
         margin-bottom: 20px;
+        ul {
+          list-style: disc;
+          list-style-position: inside;
+        }
       }
       h3 {
         font-size: var(--font-size-large);
         margin-bottom: 20px; 
         margin-top: 20px;
       }
+      
     }
   }
 }

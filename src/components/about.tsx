@@ -58,6 +58,17 @@ const About: React.FC = () => {
               et mon périmètre de recherche s'étend dans un rayon de 50km autour
               d'Alençon mais je suis également ouvert à faire du full-remote.
             </p>
+            <h3>Personellement je suis comment ?</h3>
+            <p>
+              <ul>
+                <li>Optimiste</li>
+                <li>Objectif</li>
+                <li>Esprit déquipe</li>
+                <li>Autodidacte/autonome</li>
+                <li>Sens de l'observation</li>
+                <li>Analyser, vérifier, résoudre</li>
+            </ul>
+            </p>
             <h3>Loisirs</h3>
             <div className="loisir-container">
               {loisirsItems.map((item, index) => (

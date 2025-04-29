@@ -97,7 +97,7 @@
     margin: 0 auto;
     padding: 20px 0;
     .toggle-btn:hover{
-      background-color: inherit;
+      background-color: var(--primary);
     }
     &::before {
       left: 5%;
