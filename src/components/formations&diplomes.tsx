@@ -11,24 +11,24 @@ interface FormationItem {
 const formations: FormationItem[] = [
   {
     formation: "Licence pro ATC Webmestre",
-    localisation: "Caen (14)",
+    localisation: "Faculté de Caen (14)",
     quand: "2014 - 2015",
     option: "Développement",
   },
   {
     formation: "Licence informatique",
-    localisation: "Caen (14)",
+    localisation: "Faculté de Caen (14)",
     quand: "2012 - 2014",
   },
   {
     formation: "BTS Informatique de gestion",
-    localisation: "Caen (14)",
+    localisation: "Lycée Sainte-Ursule à Caen (14)",
     quand: "2010 - 2012",
     option: "Développeur d’applications",
   },
   {
     formation: "BAC Scientifique",
-    localisation: "Caen (14)",
+    localisation: "Lycée Malherbe à Caen (14)",
     quand: "2010",
     option: "Physique/chimie",
   },
