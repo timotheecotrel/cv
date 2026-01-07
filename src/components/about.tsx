@@ -19,7 +19,9 @@ const loisirsItems = [
   { icon: faFutbol, label: "Football" },
   { icon: faCoffee, label: "Café" },
   { icon: faTv, label: "Séries TV" },
-  { icon: faPrint, label: "Impression 3D" },
+  { icon: faPrint, label: (
+          <>Impression 3D <br/> <a href="https://www.instagram.com/3dbytim/" target="_blank">@3dbytim</a></>) 
+        },
 ];
 
 const contactsItems = [
@@ -96,6 +98,7 @@ const About: React.FC = () => {
             </p>
             <h3>Loisirs</h3>
             <div className="loisir-container">
+              
               {loisirsItems.map((item, index) => (
                 <div key={index} className="loisir-item">
                   <FontAwesomeIcon icon={item.icon} size="5x" />
