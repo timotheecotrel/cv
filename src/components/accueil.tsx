@@ -34,7 +34,7 @@ const Accueil: React.FC = () => {
             Ma devise ? <i>Il n'y a pas de problème, il n'y a que des solutions.</i>
             </p>
             <p>
-            Je suis peut-être la solution à votre problème alors <a href={process.env.PUBLIC_URL + '/pdf/CV_COTREL_Timothee_dev.pdf'} target="blank"> téléchargez mon cv !
+            Je suis peut-être la solution à votre problème alors <a href={process.env.PUBLIC_URL + '/pdf/CV_COTREL_Timothee_dev.pdf'} target="blank"> téléchargez mon cv au format PDF!
               </a>
             </p>
           </div>
