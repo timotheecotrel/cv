@@ -4,7 +4,7 @@ import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
 type TimelineExpItemProps = {
   type: "experience";
   entreprise: string;
-  localisation: string;
+  localisation?: string;
   poste: string;
   debut?: string;
   fin?: string;
@@ -42,7 +42,8 @@ const TimelineItem: React.FC<TimelineItemProps> = (props) => {
       >
         <div className="card">
           <h3>
-            {props.poste} chez {props.entreprise} ({props.localisation})
+            {props.poste} chez {props.entreprise}{" "}
+            {props.localisation && `(${props.localisation})`}
           </h3>
           <button className="toggle-btn" onClick={toggleExpand}>
             {isExpanded ? "-" : "+"}
@@ -51,11 +52,12 @@ const TimelineItem: React.FC<TimelineItemProps> = (props) => {
             <div>
               {props.duree ? (
                 <p className="date">
-                  {props.debut} - {props.fin} ({props.duree})
+                  {props.debut} - {props.fin ?? "à aujourd’hui"} ({props.duree})
                 </p>
               ) : (
                 <p className="date">
-                  {props.debut} et {props.fin}
+                  {props.debut}{" "}
+                  {props.fin ? `et ${props.fin}` : "à aujourd’hui"}
                 </p>
               )}
               <div className="missions">

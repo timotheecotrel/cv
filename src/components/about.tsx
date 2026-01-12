@@ -85,6 +85,10 @@ const About: React.FC = () => {
               <br /> Je suis aussi bien à l’aise en <u>présentiel</u> qu’en <u>télétravail</u>.
               <br />
               <br />
+              Depuis août 2025 j'ai monté une micro-entreprise pour pouvoir partager une passion, l'impression 3D.
+              Il ne s'agit pas d'un emploi à plein temps, juste une passion!
+              <br/>
+              <br/>
               Je suis disponible dès <b>maintenant</b> pour une prise de poste
               et mon périmètre de recherche s'étend dans un rayon de 50km autour
               d'Alençon mais je suis également ouvert à faire du full-remote.

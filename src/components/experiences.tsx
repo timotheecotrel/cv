@@ -3,7 +3,7 @@ import React from "react";
 import TimelineItem from "./timeline";
 interface ExperienceItem {
   entreprise: string;
-  localisation: string;
+  localisation?: string;
   poste: string;
   debut?: string;
   fin?: string;
@@ -13,6 +13,28 @@ interface ExperienceItem {
 }
 
 const experiences: ExperienceItem[] = [
+    {
+    entreprise: "Qualiscope",
+    poste: "Bénévole développeur front-end",
+    debut: "Janvier 2026",
+    missions: [
+      "Améliortations visuelles",
+      "Corrections des bugs",
+      "tests"
+    ],
+    langages: ["HTML", "CSS", "JS"],
+  },{
+    entreprise: "3dbytim",
+    poste: "Micro-entrepeneur - impression 3D",
+    debut: "Aout 2025",
+    missions: [
+      "Modélisation 3D",
+      "Impression 3D",
+      "Calibrtion des imprimantes et sélection des filaments selon l'usage",
+      "Facturation"
+    ],
+    langages: ["Fusion 360", "BambuStudio"],
+  },
   {
     entreprise: "Hexaom - siège",
     localisation: "Alençon (61)",
@@ -47,8 +69,8 @@ const experiences: ExperienceItem[] = [
     localisation: "Caen (14)",
     poste: "Stage développeur et intégrateur web",
     debut: "Mai",
-    fin: "Aout 2015",
-    duree: "4 mois",
+    fin: "Aout",
+    duree : "4 mois",
     missions: [
       "Développement de fonctionnalités",
       "Création de structure",
