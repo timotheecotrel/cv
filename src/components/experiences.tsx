@@ -30,7 +30,7 @@ const experiences: ExperienceItem[] = [
     missions: [
       "Modélisation 3D",
       "Impression 3D",
-      "Calibrtion des imprimantes et sélection des filaments selon l'usage",
+      "Calibration des imprimantes et sélection des filaments selon l'usage",
       "Facturation"
     ],
     langages: ["Fusion 360", "BambuStudio"],
