@@ -28,7 +28,7 @@ const Accueil: React.FC = () => {
           <div className="quisuisje">
             <h2>Timothée (mais je préfère Tim), j'ai {monAge} ans, </h2>
             <p>
-            je suis <b>développeur fullstack</b> le back-end ou le front ça me parle !
+            je suis <b>développeur fullstack</b> le back ou le front ça me parle !
             </p>
             <p>
             Ma devise ? <i>Il n'y a pas de problème, il n'y a que des solutions.</i>
