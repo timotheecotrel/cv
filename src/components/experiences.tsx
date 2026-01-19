@@ -18,11 +18,11 @@ const experiences: ExperienceItem[] = [
     poste: "Bénévole développeur front-end",
     debut: "Janvier 2026",
     missions: [
-      "Améliortations visuelles",
+      "Améliorations visuelles avec des maquettes depuis figma",
       "Corrections des bugs",
       "tests"
     ],
-    langages: ["HTML", "CSS", "JS"],
+    langages: ["HTML", "CSS", "JS", "twig", "figma"],
   },{
     entreprise: "3dbytim",
     poste: "Micro-entrepeneur - impression 3D",
