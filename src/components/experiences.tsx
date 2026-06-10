@@ -14,9 +14,22 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
     {
+    entreprise: "410 Gone",
+    poste: "Développeur Magento",
+    debut: "Février 2026",
+     fin: "Juin 2026",
+    missions: [
+      "Créations de widgets",
+      "Installation de plugins",
+      "Dévelopemment de fonctionnalités",
+      "Intégration"
+    ],
+    langages: ["Magento","PHTML", "SCSS", "JS", "figma"],
+  },{
     entreprise: "Qualiscope",
     poste: "Bénévole développeur front-end",
     debut: "Janvier 2026",
+     fin: "Février 2026",
     missions: [
       "Améliorations visuelles avec des maquettes depuis figma",
       "Corrections des bugs",
@@ -27,6 +40,7 @@ const experiences: ExperienceItem[] = [
     entreprise: "3dbytim",
     poste: "Micro-entrepeneur - impression 3D",
     debut: "Aout 2025",
+     fin: "Février 2026",
     missions: [
       "Modélisation 3D",
       "Impression 3D",

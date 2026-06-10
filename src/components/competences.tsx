@@ -8,6 +8,7 @@ interface Skill {
 
 const SkillInformatiques: Skill[] = [
   { name: "PHP", percentage: 80 },
+  { name: "Magento", percentage: 40 },
   { name: "HTML", percentage: 80 },
   { name: "CSS/SASS", percentage: 75 },
   { name: "Javascript", percentage: 70 },
@@ -16,7 +17,7 @@ const SkillInformatiques: Skill[] = [
   { name: "SQL", percentage: 85 },
   { name: "Typescript", percentage: 30 },
   { name: "Symfony", percentage: 25 },
-  { name: "Git/Gitlab", percentage: 30 },
+  { name: "Git/Gitlab", percentage: 50 },
 ];
 
 const SkillBDD: Skill[] = [
