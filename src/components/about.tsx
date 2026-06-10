@@ -85,7 +85,7 @@ const About: React.FC = () => {
               <br /> Je suis aussi bien à l’aise en <u>présentiel</u> qu’en <u>télétravail</u>.
               <br />
               <br />
-              Pendant plus de 6 mois; j'ai eu une micro-entreprise pour pouvoir partager une passion, l'impression 3D.
+              Pendant plus de 6 mois, j'ai eu une micro-entreprise pour pouvoir partager une passion, l'impression 3D.
               <br/>
               <br/>
               Je suis disponible dès <b>maintenant</b> pour une prise de poste
