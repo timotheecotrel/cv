@@ -32,6 +32,7 @@ const SkillLogiciels: Skill[] = [
   { name: "Suite Office", percentage: 70 },
   { name: "Microsoft Teams", percentage: 70 },
   { name: "Outil de ticketing (JIRA par exemple)", percentage: 80 },
+  { name: "Claude", percentage: 50 },
 ];
 
 const Competences: React.FC = () => {
