@@ -17,7 +17,8 @@ const experiences: ExperienceItem[] = [
     entreprise: "410 Gone",
     poste: "Développeur Magento",
     debut: "Février 2026",
-     fin: "Juin 2026",
+    fin: "Juin 2026",
+    duree: "3 mois",
     missions: [
       "Créations de widgets",
       "Installation de plugins",
@@ -30,6 +31,7 @@ const experiences: ExperienceItem[] = [
     poste: "Bénévole développeur front-end",
     debut: "Janvier 2026",
      fin: "Février 2026",
+     duree: "1 mois",
     missions: [
       "Améliorations visuelles avec des maquettes depuis figma",
       "Corrections des bugs",
@@ -41,6 +43,7 @@ const experiences: ExperienceItem[] = [
     poste: "Micro-entrepeneur - impression 3D",
     debut: "Aout 2025",
      fin: "Février 2026",
+     duree: "7 mois",
     missions: [
       "Modélisation 3D",
       "Impression 3D",
