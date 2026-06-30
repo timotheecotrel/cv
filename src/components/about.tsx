@@ -20,7 +20,7 @@ const loisirsItems = [
   { icon: faCoffee, label: "Café" },
   { icon: faTv, label: "Séries TV" },
   { icon: faPrint, label: (
-          <>Impression 3D <br/> <a href="https://www.instagram.com/3dbytim/" target="_blank">@3dbytim</a></>) 
+          <>Impression 3D <br/> <a href="https://www.instagram.com/3dbytim/" target="_blank" rel="noreferrer">@3dbytim</a></>) 
         },
 ];
 
