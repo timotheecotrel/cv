@@ -14,6 +14,19 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
     {
+    entreprise: "CAF de l'Orne",
+    poste: "Technicien informatique",
+    debut: "Juillet 2026",
+    fin: "Aout 2026",
+    duree: "6 semaines",
+    missions: [
+      "Préparation et déploiement de PC",
+      "Intervention sur les PC",
+      "Logistique",
+      "Traitement des tickets"
+    ],
+    langages: ["Actice directory","G@ci (GLPI)", "SCCM", "Exchange"],
+  },{
     entreprise: "410 Gone",
     poste: "Développeur Magento",
     debut: "Février 2026",
